@@ -1,2 +1,2 @@
 ARG BASE_IMAGE_VERSION
-FROM geonode/letsencrypt:${BASE_IMAGE_VERSION}
+FROM certbot/certbot:v2.6.0

@@ -54,9 +54,9 @@ from paver.easy import (
 from setuptools.command import easy_install
 
 try:
-    from {{ project_name }}.local_settings import *
+    from tkb_geonode_project.local_settings import *
 except ImportError:
-    from {{ project_name }}.settings import *
+    from tkb_geonode_project.settings import *
 
 try:
     from paver.path import pushd
@@ -975,8 +975,8 @@ def _reset():
 
     path = os.path.join(settings.PROJECT_ROOT, "development.db")
     sh(f"rm -rf {path}")
-    sh("rm -rf {{ project_name }}/development.db")
-    sh("rm -rf {{ project_name }}/uploaded/*")
+    sh("rm -rf tkb_geonode_project/development.db")
+    sh("rm -rf tkb_geonode_project/uploaded/*")
     _configure_data_dir()
 
 

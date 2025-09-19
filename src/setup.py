@@ -29,11 +29,11 @@ def read(*rnames):
 
 
 setup(
-    name="{{ project_name }}",
+    name="tkb_geonode_project",
     version="4.0.0",
     author="",
     author_email="",
-    description="{{ project_name }}, based on GeoNode",
+    description="tkb_geonode_project, based on GeoNode",
     long_description=(read("README.md")),
     # Full list of classifiers can be found at:
     # http://pypi.python.org/pypi?%3Aaction=list_classifiers
@@ -41,8 +41,8 @@ setup(
         "Development Status :: 1 - Planning",
     ],
     license="GPL",
-    keywords="{{ project_name }} geonode django",
-    url="https://github.com/{{ project_name }}/{{ project_name }}",
+    keywords="tkb_geonode_project geonode django",
+    url="https://github.com/tkb_geonode_project/tkb_geonode_project",
     packages=find_packages(),
     dependency_links=["git+https://github.com/GeoNode/geonode.git#egg=geonode"],
     include_package_data=True,
